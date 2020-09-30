@@ -5,9 +5,9 @@
  * Time: 14:45
  */
 
-namespace HazeStudio\LaravelGoPaySDK;
+namespace Nespiii\LaravelGoPaySDK;
 
-use HazeStudio\LaravelGoPaySDK\Events\PaymentCreated;
+use Nespiii\LaravelGoPaySDK\Events\PaymentCreated;
 use Illuminate\Support\ServiceProvider;
 
 class GopayServiceProvider extends ServiceProvider

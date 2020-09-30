@@ -4,7 +4,7 @@
  * Date: 23.11.2016
  * Time: 12:31
  */
-namespace HazeStudio\LaravelGoPaySDK;
+namespace Nespiii\LaravelGoPaySDK;
 
 use Cache;
 use GoPay\Token\TokenCache;

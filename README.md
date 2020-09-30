@@ -1,5 +1,5 @@
 # Laravel GoPay SDK
-[![Build Status](https://scrutinizer-ci.com/g/hazestudio/laravel-gopay-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/hazestudio/laravel-gopay-sdk/build-status/master) [![Scrutinizer](https://img.shields.io/scrutinizer/g/hazestudio/laravel-gopay-sdk.svg)](https://scrutinizer-ci.com/g/hazestudio/laravel-gopay-sdk/?branch=master) [![Latest Stable Version](https://img.shields.io/packagist/v/hazestudio/laravel-gopay-sdk.svg)](https://packagist.org/packages/hazestudio/laravel-gopay-sdk) [![Total Downloads](https://img.shields.io/packagist/dt/hazestudio/laravel-gopay-sdk.svg)]() [![Packagist](https://img.shields.io/packagist/l/hazestudio/laravel-gopay-sdk.svg?style=plastic)]()
+[![Build Status](https://scrutinizer-ci.com/g/Nespiii/laravel-gopay-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Nespiii/laravel-gopay-sdk/build-status/master) [![Scrutinizer](https://img.shields.io/scrutinizer/g/Nespiii/laravel-gopay-sdk.svg)](https://scrutinizer-ci.com/g/Nespiii/laravel-gopay-sdk/?branch=master) [![Latest Stable Version](https://img.shields.io/packagist/v/Nespiii/laravel-gopay-sdk.svg)](https://packagist.org/packages/Nespiii/laravel-gopay-sdk) [![Total Downloads](https://img.shields.io/packagist/dt/Nespiii/laravel-gopay-sdk.svg)]() [![Packagist](https://img.shields.io/packagist/l/Nespiii/laravel-gopay-sdk.svg?style=plastic)]()
 
 ### Docs
 
@@ -15,7 +15,7 @@
 Add the package in your composer.json by executing the command.
 
 ```bash
-composer require hazestudio/laravel-gopay-sdk
+composer require nespiii/laravel-gopay-sdk
 ```
 This will both update composer.json and install the package into the vendor/ directory.
 
@@ -25,7 +25,7 @@ Add the service provider to providers:
 ```
 'providers' => [
     ...
-    HazeStudio\LaravelGoPaySDK\GopayServiceProvider::class,
+    Nespiii\LaravelGoPaySDK\GopayServiceProvider::class,
     ...
 ]
 ```
@@ -34,7 +34,7 @@ And add the facade to aliases:
 ```
 'aliases' => [
     ...
-    'GoPay' => HazeStudio\LaravelGoPaySDK\Facade::class,
+    'GoPay' => Nespiii\LaravelGoPaySDK\Facade::class,
     ...
 ]
 ```
@@ -102,11 +102,11 @@ You can log every Http request and response that GoPay make to api by using log 
 
 |      **Name**      |                     **Class**                    |
 |:--------------:|:------------------------------------------------:|
-| PaymentCreated | HazeStudio\LaravelGoPaySDK\Events\PaymentCreated |
+| PaymentCreated | Nespiii\LaravelGoPaySDK\Events\PaymentCreated |
 
 Example:
 ```php
-Event::listen(\HazeStudio\LaravelGoPaySDK\Events\PaymentCreated::class, function ($event) {
+Event::listen(\Nespiii\LaravelGoPaySDK\Events\PaymentCreated::class, function ($event) {
     dd($event->payment);
 });
 ```

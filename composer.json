@@ -1,5 +1,5 @@
 {
-    "name": "hazestudio/laravel-gopay-sdk",
+    "name": "nespiii/laravel-gopay-sdk",
     "description": "GoPay SDK integration with Laravel Framework",
     "type": "library",
     "require": {
@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "HazeStudio\\LaravelGoPaySDK\\": "src/"
+            "Nespiii\\LaravelGoPaySDK\\": "src/"
         }
     },
     "authors": [
